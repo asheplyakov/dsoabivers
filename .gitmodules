@@ -1,0 +1,3 @@
+[submodule "libfoo"]
+	path = libfoo
+	url = git@github.com:asheplyakov/libfoo.git
