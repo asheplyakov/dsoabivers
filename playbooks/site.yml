@@ -1,0 +1,6 @@
+---
+
+- hosts:
+    - abitools
+  roles:
+    - abitools

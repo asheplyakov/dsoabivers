@@ -1,0 +1,2 @@
+[abitools]
+localhost ansible_connection=local

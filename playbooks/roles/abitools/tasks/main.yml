@@ -1,0 +1,26 @@
+---
+
+- name: install C/C++ development tools
+  package: name={{ item }} state=present
+  with_items:
+    - build-essential
+    - cmake
+    - autoconf
+    - automake
+    - libtool
+    - "vtable-dumper"
+
+- name: fetch git submodules
+  command: >
+    git submodule update --init --recursive
+
+- name: install abi-dumper
+  command: >
+    make -C 3rdparty/abi-dumper install prefix=/usr/local
+  become: true
+
+- name: install abi-compliance-check
+  command: >
+    make -C 3rdparty/abi-compliance-checker install prefix=/usr/local
+  become: true
+

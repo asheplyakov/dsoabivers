@@ -1,0 +1,9 @@
+[submodule "libfoo"]
+	path = libfoo
+	url = https://github.com/asheplyakov/libfoo.git
+[submodule "3rdparty/abi-compliance-checker"]
+	path = 3rdparty/abi-compliance-checker
+	url = https://github.com/lvc/abi-compliance-checker.git
+[submodule "3rdparty/abi-dumper"]
+	path = 3rdparty/abi-dumper
+	url = https://github.com/lvc/abi-dumper.git
